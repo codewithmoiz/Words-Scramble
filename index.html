@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./bg-1.jpg');
+        }
+    </style>
+</head>
+<body class="bg-cover bg-center flex items-center justify-center">
+
+    <div class="w-full sm:w-2/3 md:w-3/4 lg:w-2/3 xl:w-1/3 bg-white flex flex-col items-center justify-center gap-4 p-4">
+        <h1 class="font-medium text-center text-3xl">Guess the <span class="uppercase cursor-pointer text-[#a6dbdb] font-bold">cartoons.</span></h1>
+        <h1 class="text-lg">The cartoon is: <span id="name" class="font-bold text-[#fcc867]">abc</span></h1>
+        <h1 id="message" class="hidden text-lg font-medium text-[#cc707d]">Sorry! Your guess is incorrect.</h1>
+        <input type="text" id="input" placeholder="Guess..." class="w-full sm:w-3/4 text-center bg-gray-100 bg-opacity-50 rounded-full border border-black-500 focus:border-[#a6dbdb] focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        <button id="btn" class="font-bold text-white bg-[#a6dbdb] border-0 py-2 px-8 focus:outline-none hover:bg-[#84cccc] rounded text-lg">Match</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
